@@ -41,3 +41,17 @@ Basically the Managed Services are provided by all Cloud providers. The all prov
 
 The managed services handle all the control plane nodes and everything storage related.
 It automates a lot of stuff and therefore safes time.
+
+# 15 - Helm - Package Manager for Kubernetes
+
+Search for packages via CLI or artifacthub.io
+    
+    helm search hub icinga
+
+Helm is also a templating engine, not just a package manager
+
+Throw values.yaml you can override the variables in those templates and therefore reduce the amount of files required
+The values can also be set through the CLI command
+
+helm install <chartname> starts with creating a version 1.0 for this chart and everytime you do helm upgrade <chartname> it increases the version number.
+This also means that helm rollback <chartname> can be used to switch back to the old version.
