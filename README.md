@@ -19,3 +19,18 @@ Execute all configuration files
 
 The config file and secret file get mounted into the pod.
 This are local volume types.
+
+# 13 - StatefulSet - Deploying Stateful Applications
+
+Only the master pod can read and write.
+The replica pods can only read.
+Everytime a new replica pod is created it copies the data from the previous pod.
+This also means theoretically, if pods never die, the data will not get lost. But this means obviously if all pods crash at the same time data is lost.
+Therefore it is still required to keep data peristant.
+
+StatefulSet pods get fixed ordered names while a Deployment does not.
+Deletion will start from the max number and then delete the number zero.
+
+The created pods also get a fixed individual DNS name like mysql-0.svc2 which is podname + servicename.
+
+Containerized environments are not perfect for Stateful applications.
