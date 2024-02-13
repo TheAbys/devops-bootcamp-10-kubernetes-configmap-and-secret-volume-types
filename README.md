@@ -34,3 +34,10 @@ Deletion will start from the max number and then delete the number zero.
 The created pods also get a fixed individual DNS name like mysql-0.svc2 which is podname + servicename.
 
 Containerized environments are not perfect for Stateful applications.
+
+# 14 - Managed Kubernetes Services Explained
+
+Basically the Managed Services are provided by all Cloud providers. The all provide identical solutions but your still vendor-locked in as it's not easy to switch afterwards.
+
+The managed services handle all the control plane nodes and everything storage related.
+It automates a lot of stuff and therefore safes time.
