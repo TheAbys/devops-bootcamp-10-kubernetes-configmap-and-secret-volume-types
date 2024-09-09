@@ -1,3 +1,5 @@
+[Notes overview](https://github.com/TheAbys/devops-bootcamp-certification-project/blob/master/README.md)
+
 # 12 - ConfigMap & Secret Volume Types
 
 Create the deployment
