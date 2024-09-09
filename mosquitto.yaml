@@ -19,7 +19,7 @@ spec:
             image: eclipse-mosquitto:2.0
             ports:
               - containerPort: 1883
-            volumeMounts: 
+            volumeMounts:
               - name: mosquitto-config
                 mountPath: /mosquitto/config
               - name: mosquitto-secret
